@@ -7,16 +7,10 @@ RUN apk update \
                --branch=master \
                https://github.com/sqlmapproject/sqlmap.git \
                /sqlmap \
-               \
-  && adduser -D sqlmap \
   && mkdir /data \
-  && chown -R sqlmap /sqlmap /data \
-  \
   && apk del git \
   && rm -rf /sqlmap/.git \
   && rm -rf /var/cache/apk/*
-
-USER sqlmap
 
 VOLUME /data
 
