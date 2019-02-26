@@ -1,3 +1,11 @@
+Build it:
+
+git clone https://github.com/sonnyyu/docker-sqlmap
+
+cd docker-sqlmap
+
+docker build -t sqlmap .
+
 Grab it from dockerhub:
 
 docker pull sonnyyu/sqlmap
